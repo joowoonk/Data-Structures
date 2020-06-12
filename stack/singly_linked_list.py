@@ -39,7 +39,7 @@ class LinkedList:
         # non-empty linked list case 
         else:
             # call set_next with the new_node on the current tail node 
-            self.tail.set_next(new_node)
+            self.tail.set_next(new_node) # self.tail.set_next(Node("L", None)) 
             # update self.tail to point to the new last Node in the linked list 
             self.tail = new_node
 
@@ -48,7 +48,7 @@ class LinkedList:
     Node's data
     What's the runtime of this method?
     '''
-    def remove_tail(self):
+    def remove_tail(self): 
         if self.tail is None:
             return None
         # save the tail Node's data
@@ -82,7 +82,7 @@ class LinkedList:
     Removes the Node that `self.head` is referring to and returns the 
     Node's data 
     '''
-    def remove_head(self):
+    def remove_head(self): 
         if self.head is None:
             return None
         # save the head Node's data
